@@ -10,7 +10,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-md-6 mb-4 mb-md-0 fade-in-left">
             <img
-              src="/dcs/pp.jpg"
+              src="/pp.jpg"
               alt="Aniket Singh"
               className="profile-img img-fluid rounded-circle shadow"
             />
