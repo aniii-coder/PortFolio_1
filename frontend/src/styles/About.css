@@ -1,0 +1,108 @@
+/* About Section */
+.about-section {
+  background-color: #f8f9fa; /* Light background for a clean look */
+  padding-top: 7rem; /* Increased padding for better spacing */
+  padding-bottom: 7rem;
+  position: relative;
+  overflow: hidden; /* Hide animations that might overflow */
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem; /* Slightly larger for more impact */
+  font-weight: 700; /* Bold for a stronger emphasis */
+  color: #2c3e50; /* Darker shade for professionalism */
+  text-align: center;
+  text-transform: uppercase; /* Adds a formal touch */
+  letter-spacing: 1.5px; /* Slight letter spacing for elegance */
+  margin-bottom: 2rem; /* Adjust spacing */
+  opacity: 0; /* Initially invisible for fade-in */
+  animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation */
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* About Text */
+.about-text {
+  font-size: 1.15rem;
+  line-height: 1.8; /* Improved readability */
+  color: #555; /* Slightly lighter color for contrast */
+  text-align: center;
+  max-width: 800px; /* Restrict width for readability */
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards; /* Fade-in text animation */
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Left Animation */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeLeft 1s ease forwards;
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Right Animation */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeRight 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hover Effect for Section Title */
+.section-title:hover {
+  color: #f39c12; /* Elegant gold color on hover */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for About Text */
+.about-text:hover {
+  color: #2c3e50; /* Dark color on hover for subtle emphasis */
+  transition: color 0.3s ease;
+}
+
+
+
+
+.profile-img {
+  width: 60%; /* Adjust size as needed */
+  height: 10%; /* Same as width for a perfect circle */
+  object-fit: cover; /* Maintain aspect ratio without stretching */
+  border-radius: 50%; /* Create a circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
