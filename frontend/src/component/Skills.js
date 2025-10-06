@@ -6,6 +6,7 @@ import { FaBootstrap } from 'react-icons/fa'; // Adding Bootstrap Icon
 import { FaBrain } from 'react-icons/fa'; // Adding ML Icon (brain)
 import { FaKey } from 'react-icons/fa'; // Adding JWT Icon (key)
 import { FaPlug } from 'react-icons/fa'; // Using FaPlug as an alternative to FaSocket for WebSockets
+import { SiJira, SiNextdotjs, SiSlack } from 'react-icons/si';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 className="skill-icon text-danger" /> },
@@ -20,7 +21,10 @@ const skills = [
   { name: 'Bootstrap', icon: <FaBootstrap className="skill-icon text-info" /> }, // Added Bootstrap
   { name: 'Machine Learning', icon: <FaBrain className="skill-icon text-success" /> }, // Added ML
   { name: 'JWT', icon: <FaKey className="skill-icon text-danger" /> }, // Added JWT
-  { name: 'WebSockets', icon: <FaPlug className="skill-icon text-primary" /> } // Replaced FaSocket with FaPlug
+  { name: 'WebSockets', icon: <FaPlug className="skill-icon text-primary" /> }, // Replaced FaSocket with FaPlug
+  {name: 'NextJs', icon:  <SiNextdotjs  size={'40px'}  color="#000"/>},
+  {name: 'Slack', icon:  <SiSlack  size={'40px'}  color="#4A154B" />},
+  {name: 'Jira', icon:  <SiJira  size={'40px'}  color="#0052CC" />},
 ];
 
 const Skills = () => {
